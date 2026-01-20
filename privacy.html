@@ -30,6 +30,9 @@
     <h2>Introduction</h2>
     <p>FreedomClock ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
 
+    <h3>Scope and Application</h3>
+    <p>This Privacy Policy applies to the FreedomClock mobile application for iOS, including all features and functionality. This includes the optional AI assistant feature that, when enabled by you, shares your user-entered data with third-party AI service providers (Perplexity AI and Groq) to generate personalized retirement planning responses.</p>
+
     <h2>Information We Collect</h2>
 
     <h3>Information You Provide</h3>
@@ -47,22 +50,58 @@
     </ul>
 
     <h2>How We Use Your Information</h2>
-    <p>We use your information to:</p>
+    <p>We use the information we collect for the following purposes:</p>
     <ul>
-        <li>Calculate and display your personalized retirement timeline</li>
-        <li>Provide AI-powered retirement planning assistance (only with your explicit consent for external AI services)</li>
-        <li>Improve app performance and fix bugs</li>
-        <li>Enhance features based on usage patterns</li>
+        <li><strong>Retirement Calculations:</strong> To run retirement timeline calculations and simulations based on your inputs</li>
+        <li><strong>AI Assistance (Optional):</strong> To generate AI-powered responses when you enable external AI services (requires explicit consent)</li>
+        <li><strong>App Functionality:</strong> To provide core features, store your preferences, and deliver the services you request</li>
+        <li><strong>Performance & Debugging:</strong> To monitor app performance, diagnose crashes, and fix technical issues via Firebase Crashlytics</li>
+        <li><strong>App Improvement:</strong> To analyze anonymous usage patterns and improve features</li>
     </ul>
 
-    <h3>Data Sharing with AI Services (Optional)</h3>
-    <p>By default, no retirement planning data is shared with external services. If you choose to enable the "Use external AI for answers" feature in Settings:</p>
+    <h3>Data Sharing with External AI Services (Optional)</h3>
+    <p><strong>By default, no retirement planning data is shared with external services.</strong> All calculations run locally on your device. If you choose to enable the "Use external AI for answers" toggle in Settings, the following applies:</p>
+    
+    <h4>What Data Is Shared</h4>
+    <p>When external AI is enabled, we share only the information necessary to answer your questions:</p>
     <ul>
-        <li><strong>What We Share:</strong> Your retirement plan inputs (age, current savings, income, monthly spending, retirement location preferences) and your questions to the AI assistant</li>
-        <li><strong>Why We Share:</strong> To provide personalized, context-aware retirement planning advice and answer your specific questions</li>
-        <li><strong>Who We Share With:</strong> Perplexity AI and Groq AI services for natural language processing and response generation</li>
-        <li><strong>Your Control:</strong> You can enable or disable this feature at any time in Settings. Disabling it stops all data sharing immediately</li>
-        <li><strong>Consent Required:</strong> You must explicitly consent before any data is shared. The app will not share data without your permission</li>
+        <li><strong>Your Question Text:</strong> The exact text of questions you ask the AI assistant</li>
+        <li><strong>Retirement Plan Inputs:</strong> Specific examples include:
+            <ul>
+                <li>Your current age and retirement age target</li>
+                <li>Current savings amount</li>
+                <li>Monthly income and monthly spending amounts</li>
+                <li>Retirement location preferences (country, state, city selections)</li>
+                <li>Investment allocation percentages</li>
+            </ul>
+        </li>
+        <li><strong>Minimal Conversation Context:</strong> Recent messages in your current chat session to maintain conversational flow</li>
+    </ul>
+
+    <h4>What We Do NOT Share</h4>
+    <ul>
+        <li><strong>Personal Identifiers:</strong> We do NOT send your name, email address, phone number, or device identifiers unless you explicitly include them in your question text</li>
+        <li><strong>Account Information:</strong> No Apple ID or subscription details are shared</li>
+        <li><strong>App Usage Analytics:</strong> Your broader app usage patterns are not sent to AI providers</li>
+    </ul>
+
+    <h4>Who We Share With & Their Practices</h4>
+    <ul>
+        <li><strong>Service Providers:</strong> Currently Perplexity AI and Groq (using Llama models) for natural language processing and response generation</li>
+        <li><strong>Their Data Practices:</strong> These services process the data you send to generate responses. Their data retention and usage practices are governed by their own privacy policies. We recommend reviewing their policies:
+            <ul>
+                <li>Perplexity AI Privacy Policy: <a href="https://www.perplexity.ai/privacy" target="_blank">https://www.perplexity.ai/privacy</a></li>
+                <li>Groq Privacy Policy: <a href="https://groq.com/privacy-policy/" target="_blank">https://groq.com/privacy-policy/</a></li>
+            </ul>
+        </li>
+        <li><strong>No Guarantees:</strong> We cannot guarantee or verify the data retention practices of third-party AI providers. Use external AI services at your own discretion</li>
+    </ul>
+
+    <h4>Your Control</h4>
+    <ul>
+        <li><strong>Opt-In Required:</strong> You must explicitly consent and enable the feature before any data is shared</li>
+        <li><strong>Easy Toggle:</strong> Turn external AI on or off at any time in Settings → AI Assistant</li>
+        <li><strong>Immediate Effect:</strong> Disabling the toggle immediately stops all data sharing with external AI services</li>
     </ul>
 
     <h2>Data Storage and Security</h2>
@@ -74,21 +113,57 @@
     </ul>
 
     <h2>Third-Party Services</h2>
-    <p>We use the following third-party services:</p>
+    <p>We integrate with the following third-party services to provide app functionality:</p>
     <ul>
-        <li><strong>Firebase (Google):</strong> For crash reporting, performance monitoring, and authentication</li>
-        <li><strong>RevenueCat/StoreKit:</strong> For processing premium subscriptions (payment processing handled by Apple)</li>
-        <li><strong>AI Services (Perplexity/Groq):</strong> For the AI retirement assistant. When you enable "Use external AI for answers" in Settings (with your explicit consent), your retirement plan inputs (age, savings, income, spending, location) and questions are sent to these AI services to generate personalized responses. These services do not retain your data after processing your queries. You can disable this feature at any time in Settings.</li>
+        <li><strong>Firebase (Google):</strong> For crash reporting, performance monitoring, and authentication. Firebase collects technical and diagnostic data. Learn more: <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a></li>
+        <li><strong>Apple StoreKit:</strong> For processing premium subscriptions. Payment processing is handled by Apple and subject to Apple's privacy policy</li>
+        <li><strong>External AI Services (Optional - Perplexity/Groq):</strong> Only used when you enable "Use external AI for answers" in Settings. See "Data Sharing with External AI Services" section above for full details on what is shared and how to control it</li>
     </ul>
-    <p>These services have their own privacy policies and data practices. You must provide explicit consent before any data is shared with external AI services.</p>
+    <p><strong>Important:</strong> Third-party services operate under their own privacy policies and terms of service. We do not control how they handle data and cannot guarantee their practices. You must provide explicit consent before any retirement planning data is shared with external AI services.</p>
 
-    <h2>Your Choices</h2>
+    <h2>Data Retention</h2>
+    
+    <h3>Data Stored Locally on Your Device</h3>
     <ul>
-        <li><strong>Data Deletion:</strong> You can delete all your data by using "Reset Plan" in Settings or by uninstalling the app</li>
-        <li><strong>AI Data Sharing:</strong> Control whether your data is shared with external AI services via the "Use external AI for answers" toggle in Settings</li>
-        <li><strong>Analytics Opt-Out:</strong> You can limit analytics collection through your device's privacy settings</li>
-        <li><strong>Subscription Management:</strong> Manage or cancel subscriptions through your Apple ID settings</li>
-        <li><strong>Revoke AI Consent:</strong> Turn off the AI toggle in Settings to immediately stop sharing data with external AI services</li>
+        <li><strong>What:</strong> All your retirement planning inputs, calculation history, preferences, and AI chat history</li>
+        <li><strong>How Long:</strong> Data persists on your device until you delete it or uninstall the app</li>
+        <li><strong>Deletion:</strong> Use "Reset Plan" in Settings to delete all local data, or uninstall the app</li>
+    </ul>
+
+    <h3>Data Stored on Our Servers</h3>
+    <ul>
+        <li><strong>What:</strong> We do NOT store your retirement planning data on our servers. All calculations and data storage happen locally on your device</li>
+        <li><strong>Analytics & Crashes:</strong> Anonymous crash reports and performance metrics are retained by Firebase per their retention policies (typically 90 days for crashes, aggregated analytics may be retained longer)</li>
+    </ul>
+
+    <h3>External AI Service Data</h3>
+    <ul>
+        <li><strong>Our Logs:</strong> We do NOT log or store the questions and data you send to external AI services</li>
+        <li><strong>AI Provider Retention:</strong> Data sent to Perplexity and Groq is subject to their own retention policies. We cannot control or verify how long they retain your data. Consult their privacy policies for details</li>
+    </ul>
+
+    <h2>Your Choices & Controls</h2>
+    <p>You have the following options to control your data:</p>
+    
+    <h3>AI Data Sharing Control</h3>
+    <ul>
+        <li><strong>Enable/Disable External AI:</strong> Go to Settings → AI Assistant and toggle "Use external AI for answers" on or off at any time</li>
+        <li><strong>Default Setting:</strong> External AI is OFF by default; you must opt in to use it</li>
+        <li><strong>Immediate Effect:</strong> Turning off the toggle immediately stops all data sharing with AI providers</li>
+    </ul>
+
+    <h3>Data Deletion</h3>
+    <ul>
+        <li><strong>Delete Plan Data:</strong> In Settings, tap "Reset Plan" to permanently delete all your inputs and calculation history</li>
+        <li><strong>Delete AI Chat History:</strong> In the AI Assistant screen, tap the trash icon to clear your conversation history</li>
+        <li><strong>Uninstall App:</strong> Deleting the app removes all locally stored data from your device</li>
+    </ul>
+
+    <h3>Other Controls</h3>
+    <ul>
+        <li><strong>Analytics:</strong> Limit analytics collection through your device's privacy settings (Settings → Privacy → Analytics & Improvements)</li>
+        <li><strong>Subscription Management:</strong> Manage or cancel premium subscriptions through your Apple ID account settings</li>
+        <li><strong>Questions or Requests:</strong> Contact us at support@newronrobotics.com for data-related questions or requests</li>
     </ul>
 
     <h2>Children's Privacy</h2>

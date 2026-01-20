@@ -1,2 +1,2 @@
-# freedom-clock-privacy-policy
-Freedom Clock App - Privacy Policy
+# freedom-clock-legal
+Freedom Clock App - Privacy Policy and Terms of Service
